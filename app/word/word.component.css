@@ -1,0 +1,28 @@
+.home-panel{
+	vertical-align: top;
+	font-size: 20;
+	margin: 0;
+}
+
+.seletus {
+	background-color: rgb(248, 248, 248);
+	padding: 15;
+	margin-left: 15;
+	margin-right: 15;
+	margin-top: 15;
+	margin-bottom: 15;
+}
+
+.flag {
+	width: 50;
+	margin-left: 7;
+	margin-right: 4;
+	margin-top: 16;
+}
+
+.word {
+	font-size: 20;
+	color: #000;
+	font-weight: 400;
+	margin-top: 13;
+}

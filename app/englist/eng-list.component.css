@@ -1,0 +1,15 @@
+.home-panel{
+	vertical-align: top;
+	font-size: 20;
+	margin: 15;
+}
+
+StackLayout {
+	height:100%;
+}
+
+.tulemused {
+	font-size: 15;
+	text-align: center;
+	padding: 10;
+}

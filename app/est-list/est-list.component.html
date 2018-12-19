@@ -1,0 +1,18 @@
+<ActionBar title=" ">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="onNavBtnTap()"></NavigationButton>
+</ActionBar>
+<StackLayout class="home-panel">
+    <SearchBar hint="Otsi märksõna..." [text]="search" (submit)="onSearchSubmit($event)"></SearchBar>
+    <Label class="tulemused" text="Tulemused otsingule ''{{search}}'' "
+        textWrap="true"></Label>
+    <ListView class="list-group" [items]="countries">
+        <ng-template let-country="item">
+            <FlexboxLayout flexDirection="row" class="list-group-item">
+                <Label (tap)="onItemTap(country._id)" [text]="country.eesti"
+                    class="list-group-item-heading" verticalAlignment="center"
+                    style="width: 80%; font-weight: 800; color: #424242;"
+                    textWrap="true"></Label>
+            </FlexboxLayout>
+        </ng-template>
+    </ListView>
+</StackLayout>

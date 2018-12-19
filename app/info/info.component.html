@@ -1,0 +1,22 @@
+<ActionBar title="Info" class="action-bar">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="onNavBtnTap()"></NavigationButton>
+</ActionBar>
+
+<ScrollView class="page">
+    <StackLayout>
+        <Label text="Allikad:" class="info"></Label>
+        <StackLayout class="info2">
+            <Label href="https://akit.cyber.ee/" text="https://stats.cyber.ee/"></Label>
+            <Label href="https://akit.cyber.ee/" text="https://stats.cyber.ee/"></Label>
+            <hr>
+            <Label textWrap="true" text="Rakenduses sõnu: {{count}} "></Label>
+        </StackLayout>
+        <StackLayout>
+            <Label class="autor" textWrap="true" text="Autorid:"></Label>
+            <Label class="autor2" textWrap="true" text="Heiko Piirme"></Label>
+            <Label class="autor2" textWrap="true" text="Henri Tamvere"></Label>
+            <Label class="autor2" textWrap="true" text="Tõnis Ingvar Mals"></Label>
+        </StackLayout>
+    </StackLayout>
+
+</ScrollView>

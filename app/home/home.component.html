@@ -1,0 +1,20 @@
+<ActionBar title="" class="action-bar">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_info_details"
+        (tap)="onNavInfoTap()"></NavigationButton>
+</ActionBar>
+
+<GridLayout>
+    <ScrollView class="page">
+        <StackLayout class="home-panel">
+            <Image class="logo" src="https://i.imgur.com/GbwROWz.png"></Image>
+            <GridLayout columns="2, auto, *" rows="1, auto, *" width="230">
+                <Button [className]="searchEst ? 'active' : 'inactive'" id="eesti"
+                    text="Eesti" row="1" col="1" (tap)="changeSearch()"></Button>
+                <Button [className]="!searchEst ? 'active' : 'inactive'" id="inglise"
+                    text="Inglise" row="1" col="2" (tap)="changeSearch()"></Button>
+            </GridLayout>
+            <SearchBar style="text-transform: lowercase;" hint="Otsi märksõna..."
+                [text]="searchPhrase" (submit)="onSearchSubmit($event)"></SearchBar>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

@@ -1,0 +1,18 @@
+<ActionBar title=" ">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="onNavBtnTap()" ></NavigationButton>
+</ActionBar>
+
+<ScrollView class="page">
+    <StackLayout class="home-panel">
+        <GridLayout columns="8, auto, *" rows="2, auto, *">
+            <Image class="flag" row="1" col="1" src="https://cdn2.iconfinder.com/data/icons/flags_gosquared/64/Estonia.png"></Image>
+            <Label class="word" [text]="word.eesti" row="1" col="3" colSpan="5"
+                verticalAlignment="center" textWrap="true"></Label>
+            <Image class="flag" row="2" col="1" src="https://cdn2.iconfinder.com/data/icons/flags_gosquared/64/United-Kingdom.png"></Image>
+            <Label class="word" [text]="word.inglise" row="2" col="3" colSpan="5"
+                verticalAlignment="center" textWrap="true"></Label>
+        </GridLayout>
+        <Label *ngIf="word.seletus" class="h3 seletus" [text]="word.seletus"
+            textWrap="true"></Label>
+    </StackLayout>
+</ScrollView>  
